@@ -1,0 +1,12 @@
+/* body{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbZwf1xGh9n8HCjVHjsZMvy4RS2TKJVgSLQg&usqp=CAU);
+} */
+.card{
+    padding: 3%;
+}
+.card:hover{
+    padding: 5px;
+    box-shadow: 6px 5px 6px #2196F3;
+    cursor: pointer;
+    
+}

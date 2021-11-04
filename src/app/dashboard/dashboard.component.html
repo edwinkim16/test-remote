@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Home Page</title>
+</head>
+<body>
+  <div class="container body">
+    <div class="row text-center">
+     
+      <div class="col-md-3">
+        <select name="" id="" class="form-control">
+          <option *ngFor="let sub of subjecs" value="">{{ sub.name }}</option>
+        </select>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card" style="min-height:300px;padding: 3%;">
+          <div class="card-block">
+              <h2 >Title</h2>
+              <div class="mask flex-center rgba-black-strong">
+                  <p *ngFor="let nt of notes">{{nt.title}}</p>
+                  
+              </div>
+              
+              <div class="card-text">
+                  
+              </div>
+              <br>
+             
+          </div>
+        </div>
+      
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="min-height:300px;padding: 3%;">
+          <div class="card-block">
+              <h2>Description</h2>
+              <div class="mask flex-center rgba-black-strong">
+                  <p *ngFor="let nt of notes">{{nt.description}}</p>
+                  
+              </div>
+              
+              <div class="card-text">
+                  
+              </div>
+              <br>
+             
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="min-height:300px;">
+          <div class="card-block">
+              
+              <div class="mask flex-center rgba-black-strong">
+                  <img src="../../assets/images/flash.png" alt="" height="280" width="300">
+              </div>
+              
+              <div class="card-text">
+                  
+              </div>
+              <br>
+             
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="container-fluid">
+      <h2 class="text-center">Create a new Note</h2>
+      <hr>
+      <form #noteForm='ngForm'>
+         <div class="form-group">
+          <label for="name">Subject</label>
+          
+          <select name="" id="" style="margin-left: 20px;">
+            <option *ngFor="let sub of subjecs">{{ sub.name }}</option>
+          </select>
+          
+         </div>
+         <br>
+          <div class="form-group">
+              <label for="name">Title</label>
+              <input type="text" required class="form-control" id="name">
+          </div>
+          <br>
+          <div class="form-group">
+    
+              <label for="description">Description</label>
+              <textarea class="form-control" id="description" rows="4" required></textarea>
+    
+          </div>
+          <br>
+          <button type="submit" class="btn btn-success">Add Notes</button>
+      </form>
+    </div>
+  </div>
+  <br>
+  <div class="footer">
+    <!-- Footer -->
+  <footer class="page-footer font-small unique-color-dark pt-4" style="background-color: #343a40;color: white;">
+  
+      <!-- Footer Elements -->
+      <div class="container">
+     
+        <!-- Call to action -->
+        <ul class="list-unstyled list-inline text-center py-2">
+          <li class="list-inline-item">
+            <h5 class="mb-1">Flashcards <i class="fas fa-trophy"></i>  <br> Study with Flashcards</h5>
+          </li>
+          <li class="list-inline-item">
+            <a href="" class="btn btn-outline-white btn-rounded" style="color: green;font-weight: bolder;">Sign up!</a>
+          </li>
+        </ul>
+        <!-- Call to action -->
+     
+      </div>
+      <!-- Footer Elements -->
+     
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2021 Copyright:
+        <a > Dev Wilson & Edwin Kimathi</a>
+      </div>
+      <!-- Copyright -->
+     
+     </footer>
+     <!-- Footer -->
+  
+  </div>
+  
+  
+</body>
+</html>
+
